@@ -77,7 +77,7 @@ class CleanCalendarController extends ChangeNotifier {
   DateTime? rangeMinDate;
   DateTime? rangeMaxDate;
 
-  List<String> getDaysOfWeek([String locale = 'pt']) {
+  List<String> getDaysOfWeek([String locale = 'zh']) {
     var today = DateTime.now();
 
     while (today.weekday != weekdayStart) {
@@ -98,6 +98,9 @@ class CleanCalendarController extends ChangeNotifier {
   }
 
   void onDayClick(DateTime date, {bool update = true}) {
+
+    print('aabb----------⭐️️️️⭐️️️️⭐️️️️⭐️️️️⭐️️️️⭐️️️️⭐️️️️⭐️️️️⭐️️️️⭐️️️️⭐️️️️⭐️️️️⭐️️️️------------'+ date.toString());
+
     if (rangeMode) {
       if (rangeMinDate == null || rangeMaxDate != null) {
         rangeMinDate = date;
