@@ -44,7 +44,7 @@ class MonthWidget extends StatelessWidget {
     return Text(
       text.capitalize(),
       textAlign: textAlign ?? TextAlign.center,
-      style: textStyle ?? Theme.of(context).textTheme.headline6!,
+      style: textStyle ?? Theme.of(context).textTheme.titleLarge!,
     );
   }
 
@@ -52,7 +52,7 @@ class MonthWidget extends StatelessWidget {
     return Text(
       text.capitalize(),
       textAlign: textAlign ?? TextAlign.center,
-      style: textStyle ?? Theme.of(context).textTheme.headline6!,
+      style: textStyle ?? Theme.of(context).textTheme.titleLarge!,
     );
   }
 }
